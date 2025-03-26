@@ -11,7 +11,7 @@ function Header() {
         <ul></ul>
       </nav>
 
-      <button className="font-cabin cursor-pointer py-3 text-lg  px-8 rounded-2xl bg-[#105418] text-center text-[#f0fff4]">
+      <button className="font-cabin cursor-pointer py-3 text-lg  px-8 rounded-2xl bg-[#105418] text-center">
         Get In Touch
       </button>
     </header>

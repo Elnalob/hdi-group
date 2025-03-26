@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="bg-[#f0fff4] mt-50 w-full pb-3 p-10 text-[#f0fff4]">
+    <footer className="bg-[#f0fff4] w-full pb-3 p-10">
       <section className="rounded-[40px] bg-[#105418] px-10 pt-25 pb-4">
         <div className="w-[66.7vw] mx-auto text-center space-y-8">
           <div>
