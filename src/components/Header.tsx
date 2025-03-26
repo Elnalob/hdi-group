@@ -1,5 +1,3 @@
-import React from "react";
-
 function Header() {
   return (
     <header className="h-fit z-50 py-2  flex items-center justify-between fixed inset-0 w-full bg-[#F0FDFF] 2xl:container 2xl:mx-auto px-10">

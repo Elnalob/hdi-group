@@ -1,5 +1,3 @@
-import React from "react";
-
 function HeroSection() {
   return (
     <section className="space-y-8 mt-[68px] px-10 text-center py-10 bg-[#f0fff4]">
