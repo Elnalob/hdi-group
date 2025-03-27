@@ -18,14 +18,15 @@ function Footer() {
             Get in Touch
           </button>
 
-          <nav>
+          {/* <nav>
             <ul className="flex items-center justify-center [&_li]:p-2 gap-x-5 text-base font-medium">
               <li>FAQ'S</li>
               <li>Legal</li>
               <li>Pricing</li>
               <li>FAQ'S</li>
             </ul>
-          </nav>
+          </nav> */}
+          <p className="text-base">HDI Group © 2025 • All Rights Reserved</p>
         </div>
       </section>
     </footer>

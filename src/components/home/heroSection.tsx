@@ -1,6 +1,6 @@
 function HeroSection() {
   return (
-    <section className="space-y-8 mt-[68px] text-center p-10 bg-[#f0fff4]">
+    <section className="space-y-8 mt-12 xl:mt-[68px] text-center p-10 bg-[#f0fff4]">
       <div className="space-y-4">
         <h1 className="text-black text-[56px] font-semibold -tracking-[2.6px] leading-17">
           Driving Sustainable Growth Across Industries
