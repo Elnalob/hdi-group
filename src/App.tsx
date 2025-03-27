@@ -2,7 +2,7 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import HeroSection from "./components/home/heroSection";
 import About from "./components/home/about";
-import Goals from "./components/home/goals";
+import Goals from "./components/home/goals"
 
 function App() {
   return (
