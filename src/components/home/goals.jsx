@@ -1,26 +1,17 @@
-// import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-
 function Goals() {
   return (
-    <section className="pt-10 space-y-15">
-      <div className="w-[41.7vw] mx-auto text-center space-y-6">
-        <h2 className="text-black text-[56px] font-semibold -tracking-[2.24px] leading-17 capitalize">
+    <section className="pt-5 lg:pt-7 xl:pt-10 md:space-y-8 lg:space-y-11 space-y-15 px-5 md:px-0">
+      <div className=" md:w-[41.7vw] mx-auto text-center space-y-2.5 lg:space-y-4 xl:space-y-6">
+        <h2 className="text-black text-[26px] md:text-[34px] lg:text-[42px] xl:text-[56px] font-semibold md:-tracking-[1.3px]  lg:-tracking-[2.24px] leading-8 md:leading-10 lg:leading-13 xl:leading-17 capitalize">
           Our Commitment to a Sustainable Future
         </h2>
-        <p className="text-[#333333] font-cabin leading-7.5 text-xl">
+        <p className="text-[#333333] font-cabin leading-6.5 md:leading-5.5 lg:leading-6 xl:leading-7.5 text-base lg:text-lg xl:text-xl">
           Aligning with global goals to drive impact in food, energy,
           agribusiness, and education.
         </p>
       </div>
 
-      <div>
-        {/* <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
-          gutterBreakpoints={{ 350: "12px", 750: "16px", 900: "24px" }}
-        >
-          <Masonry></Masonry>
-        </ResponsiveMasonry> */}
-      </div>
+      <div></div>
     </section>
   );
 }

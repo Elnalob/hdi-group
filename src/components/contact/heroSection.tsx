@@ -22,7 +22,7 @@ function HeroSection() {
   return (
     <section className="mt-14 md:mt-10 lg:mt-12 xl:mt-[68px] p-5 lg:p-7 xl:p-10 space-y-6 md:space-y-5 lg:space-y-6 xl:space-y-8 bg-[#f0fff4]">
       <div className=" text-center">
-        <h2 className="text-black text-[30px] md:text-4xl lg:text-5xl xl:text-[64px] capitalize font-semibold leading-8 md:leading-11 lg:leading-14 xl:leading-18.5 -tracking-[1.5px]">
+        <h2 className="text-black text-[30px] md:text-4xl lg:text-5xl xl:text-[64px] capitalize font-semibold leading-8 md:leading-11 lg:leading-14 xl:leading-18.5 md:-tracking-[1px] lg:-tracking-[1.5px]">
           Let's connect and{" "}
           <span className="text-[#105418] ">Create impact</span>
         </h2>
