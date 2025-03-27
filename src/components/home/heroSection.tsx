@@ -18,8 +18,8 @@ function HeroSection() {
 
       <div className="w-[83vw] h-80 md:h-95 lg:h-110 xl:h-150 mx-auto">
         <img
-          src="https://res.cloudinary.com/dpupnibml/image/upload/v1741845860/faqHeroBg_rnhtn9.jpg"
-          alt=""
+          src="https://res.cloudinary.com/dpupnibml/image/upload/v1743114945/hero-section-img_xmhblz.jpg"
+          alt="hero-section image"
           className="object-center object-cover rounded-[40px] size-full"
         />
       </div>

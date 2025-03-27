@@ -8,6 +8,7 @@ function Header() {
           <img
             src="https://res.cloudinary.com/dpupnibml/image/upload/v1743108386/HDI_Logo_wxasb0.png"
             className="w-14 md:w-12 xl:w-14 h-8.5 md:h-7 xl:h-10"
+            alt="hdi logo"
           />
         </NavLink>
       </div>
