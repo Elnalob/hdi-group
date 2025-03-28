@@ -48,8 +48,7 @@ function About() {
   const pinElement = useRef(null);
   useGSAP(
     () => {
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      const pinInstance = ScrollTrigger.create({
+      ScrollTrigger.create({
         trigger: pinElement.current,
         start: "top top",
         // end: ".scrolling-element top",
@@ -103,9 +102,6 @@ function About() {
             <p className="text-[#333333] text-base md:text-sm xl:text-base leading-5.5 md:leading-4.5 lg:leading-5 xl:leading-6.5">
               {data.description}
             </p>
-            <button className="font-cabin cursor-pointer py-3 md:py-2.5 lg:py-3 text-base md:text-[15px] lg:text-base xl:text-lg  px-6 md:px-5 lg:px-6.5 xl:px-8 rounded-2xl bg-[#105418] text-center">
-              Get In Touch
-            </button>
           </div>
         ))}
       </div>
