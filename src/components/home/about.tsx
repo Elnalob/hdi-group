@@ -49,14 +49,18 @@ function About() {
   const pinElement = useRef(null);
   useGSAP(
     () => {
-      ScrollTrigger.create({
-        trigger: pinElement.current,
-        start: "top top",
-        // end: ".scrolling-element top",
-        endTrigger: ".scrolling-element",
-        end: "bottom 55%",
-        pin: true,
-        pinSpacing: false,
+      const mm = gsap.matchMedia();
+
+      mm.add("(min-width: 768px)", () => {
+        ScrollTrigger.create({
+          trigger: pinElement.current,
+          start: "top top",
+          // end: ".scrolling-element top",
+          endTrigger: ".scrolling-element",
+          end: "bottom 55%",
+          pin: true,
+          pinSpacing: false,
+        });
       });
     },
     { scope: container }
@@ -85,7 +89,10 @@ function About() {
           </div>
 
           <button>
-            <NavLink to="/contact" className="hover:ring-1 hover:ring-offset-2 hover:ring-[#105418] transition-colors duration-500 hover:bg-[#105418]/90 font-cabin cursor-pointer py-3 md:py-2.5 lg:py-3 text-base md:text-[15px] lg:text-base xl:text-lg  px-6 md:px-5 lg:px-6.5 xl:px-8 rounded-2xl bg-[#105418] text-center">
+            <NavLink
+              to="/contact"
+              className="hover:ring-1 hover:ring-offset-2 hover:ring-[#105418] transition-colors duration-500 hover:bg-[#105418]/90 font-cabin cursor-pointer py-3 md:py-2.5 lg:py-3 text-base md:text-[15px] lg:text-base xl:text-lg  px-6 md:px-5 lg:px-6.5 xl:px-8 rounded-2xl bg-[#105418] text-center"
+            >
               Get In Touch
             </NavLink>
           </button>
