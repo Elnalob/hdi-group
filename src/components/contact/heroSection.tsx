@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import { Mail, MapPin, Phone } from "../svg";
 
 function HeroSection() {
@@ -20,8 +21,8 @@ function HeroSection() {
   ];
 
   return (
-    <section className=" bg-[#f0fff4]">
-      <div className="2xl:container 2xl:mx-auto mt-14 md:mt-10 lg:mt-12 xl:mt-[68px] p-5 lg:p-7 xl:p-10 space-y-6 md:space-y-5 lg:space-y-6 xl:space-y-8">
+    <section className=" bg-[#f0fff4] pt-14 md:pt-10 lg:pt-12">
+      <div className="2xl:container 2xl:mx-auto bg-[#f0fff4]  xl:mt-[68px] p-5 lg:p-7 xl:p-10 space-y-6 md:space-y-5 lg:space-y-6 xl:space-y-8">
         <div className=" text-center">
           <h2 className="text-black text-[30px] md:text-4xl lg:text-5xl xl:text-[64px] capitalize font-semibold leading-8 md:leading-11 lg:leading-14 xl:leading-18.5 md:-tracking-[1px] lg:-tracking-[1.5px]">
             Let's connect and{" "}
@@ -34,8 +35,10 @@ function HeroSection() {
         </div>
 
         <div className="grid place-content-center">
-          <button className="font-cabin cursor-pointer py-3 md:py-2 xl:py-3 text-base md:text-[15px] lg:text-base xl:text-lg  px-6 md:px-5 lg:px-6 xl:px-8 rounded-2xl bg-[#105418] text-center hover:ring-1 hover:ring-offset-2 hover:ring-[#105418] transition-colors duration-500 hover:bg-[#105418]/90 focus:ring-1 focus:ring-offset-2 focus:ring-[#105418] focus:bg-[#105418]/90">
-            Get In Touch
+          <button>
+            <NavLink to="/contact" className="font-cabin cursor-pointer py-3 md:py-2 xl:py-3 text-base md:text-[15px] lg:text-base xl:text-lg  px-6 md:px-5 lg:px-6 xl:px-8 rounded-2xl bg-[#105418] text-center hover:ring-1 hover:ring-offset-2 hover:ring-[#105418] transition-colors duration-500 hover:bg-[#105418]/90 focus:ring-1 focus:ring-offset-2 focus:ring-[#105418] focus:bg-[#105418]/90">
+              Get In Touch
+            </NavLink>
           </button>
         </div>
 

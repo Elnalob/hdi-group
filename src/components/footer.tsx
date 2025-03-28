@@ -1,3 +1,5 @@
+import { NavLink } from "react-router";
+
 function Footer() {
   return (
     <footer className="mt-1.5 md:mt-2 lg:mt-3 xl:mt-5 bg-[#f0fff4] w-full pb-3 p-5 lg:p-7 xl:p-10">
@@ -15,8 +17,10 @@ function Footer() {
             </p>
           </div>
 
-          <button className="font-cabin text-base md:text-lg lg:text-xl xl:text-2xl font-semibold leading-6 bg-black py-3.5 xl:py-4 px-6 md:px-5 lg:px-6 xl:px-8 rounded-2xl cursor-pointer">
-            Get in Touch
+          <button>
+            <NavLink to="/contact" className="font-cabin text-base md:text-lg lg:text-xl xl:text-2xl font-semibold leading-6 bg-black py-3.5 xl:py-4 px-6 md:px-5 lg:px-6 xl:px-8 rounded-2xl cursor-pointer">
+              Get in Touch
+            </NavLink>
           </button>
           <p className="text-[15px] md:text-sm xl:text-base">
             HDI Group © 2025 • All Rights Reserved
