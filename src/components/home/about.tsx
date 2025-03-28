@@ -56,7 +56,6 @@ function About() {
         end: "bottom 55%",
         pin: true,
         pinSpacing: false,
-        markers: true,
       });
     },
     { scope: container }
