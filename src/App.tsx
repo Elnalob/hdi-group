@@ -8,7 +8,6 @@ import Header from "./components/navHeader";
 function App() {
   return (
     <>
-      {/* <Header /> */}
       <Header />
       <HeroSection />
       <About />
