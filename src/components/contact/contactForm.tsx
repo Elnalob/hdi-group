@@ -92,7 +92,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className="bg-green-900 font-cabin hover:bg-green-800 text-white font-medium py-3 md:py-2 xl:py-4 px-7 md:px-5 lg:px-6 xl:px-8 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 text-base md:text-sm xl:text-base"
+          className="bg-green-900 cursor-pointer font-cabin text-white font-medium py-3 md:py-2 xl:py-4 px-7 md:px-5 lg:px-6 xl:px-8 rounded-lg focus:outline-none hover:ring hover:ring-[#105418] hover:ring-offset-2 transition-colors duration-500 hover:bg-[#105418]/90 focus:ring focus:ring-[#105418] focus:ring-offset-2 text-base md:text-sm xl:text-base"
         >
           Submit
         </button>

@@ -11,10 +11,10 @@ function Goals() {
         </p>
       </div>
 
-      <div className="md:w-[83vw] mx-auto ">
-        <div className="grid md:grid-cols-2 gap-5 lg:gap-7 xl:gap-10 ">
-          <div className="space-y-5 lg:space-y-7 xl:space-y-10">
-            <div className="rounded-3xl group overflow-hidden relative group">
+      <div className="md:w-[83vw] mx-auto">
+        <div className="flex flex-col md:grid md:grid-cols-2 md:gap-5 lg:gap-7 xl:gap-10 ">
+          <div className="contents md:block space-y-5 lg:space-y-7 xl:space-y-10">
+            <div className="order-1 rounded-3xl group overflow-hidden relative group">
               <img
                 src="/SDG 2.gif"
                 className="w-full md:h-[290px] lg:h-[350px] xl:h-[400px] object-cover rounded-3xl overflow-hidden group-hover:scale-105 transition-transform duration-300"
@@ -32,7 +32,7 @@ function Goals() {
               </div>
             </div>
 
-            <div className="rounded-3xl overflow-hidden relative group">
+            <div className="order-3 rounded-3xl overflow-hidden relative group">
               <img
                 src="/sdg 7.jpeg"
                 className="w-full md:h-[300px] lg:h-[400px] xl:h-[500px] object-cover rounded-3xl overflow-hidden group-hover:scale-105 transition-transform duration-300"
@@ -51,7 +51,7 @@ function Goals() {
               </div>
             </div>
 
-            <div className="rounded-3xl overflow-hidden relative group">
+            <div className="order-5 rounded-3xl mt-5 md:mt-0 overflow-hidden relative group">
               <img
                 src="/SDG 13.png"
                 className="w-full md:h-[320px] lg:h-[380px] xl:h-[450px] object-cover rounded-3xl overflow-hidden group-hover:scale-105 transition-transform duration-300"
@@ -71,8 +71,8 @@ function Goals() {
             </div>
           </div>
 
-          <div className="space-y-5 lg:space-y-7 xl:space-y-10">
-            <div className="rounded-3xl overflow-hidden relative group">
+          <div className="contents md:block space-y-5 lg:space-y-7 xl:space-y-10">
+            <div className="rounded-3xl order-2 overflow-hidden relative group">
               <img
                 src="/SDG 4.gif"
                 className="w-full md:h-[370px] lg:h-[500px] xl:h-[600px] object-cover rounded-3xl overflow-hidden group-hover:scale-105 transition-transform duration-300"
@@ -91,7 +91,7 @@ function Goals() {
               </div>
             </div>
 
-            <div className="rounded-3xl overflow-hidden relative group">
+            <div className="order-4 rounded-3xl overflow-hidden relative group">
               <img
                 src="/SDG 8.png"
                 className="w-full h-[360px] lg:h-[500px] xl:h-[580px] object-cover rounded-3xl overflow-hidden group-hover:scale-105 transition-transform duration-300"

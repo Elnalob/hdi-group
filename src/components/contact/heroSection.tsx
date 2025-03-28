@@ -33,7 +33,7 @@ function HeroSection() {
       </div>
 
       <div className="grid place-content-center">
-        <button className="font-cabin cursor-pointer py-3 md:py-2 xl:py-3 text-base md:text-[15px] lg:text-base xl:text-lg  px-6 md:px-5 lg:px-6 xl:px-8 rounded-2xl bg-[#105418] text-center">
+        <button className="font-cabin cursor-pointer py-3 md:py-2 xl:py-3 text-base md:text-[15px] lg:text-base xl:text-lg  px-6 md:px-5 lg:px-6 xl:px-8 rounded-2xl bg-[#105418] text-center hover:ring-1 hover:ring-offset-2 hover:ring-[#105418] transition-colors duration-500 hover:bg-[#105418]/90 focus:ring-1 focus:ring-offset-2 focus:ring-[#105418] focus:bg-[#105418]/90">
           Get In Touch
         </button>
       </div>

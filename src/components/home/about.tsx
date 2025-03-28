@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
@@ -46,22 +46,24 @@ function About() {
 
   const container = useRef(null);
   const pinElement = useRef(null);
-  // useGSAP(
-  //   () => {
-  //     const pinInstance = ScrollTrigger.create({
-  //       trigger: pinElement.current,
-  //       start: "top top",
-  //       end: "",
-  //       pin: true,
-  //       pinSpacing: false,
-  //       markers: true,
-  //     });
-  //   },
-  //   { scope: container }
-  // );
+  useGSAP(
+    () => {
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      const pinInstance = ScrollTrigger.create({
+        trigger: pinElement.current,
+        start: "top top",
+        // end: ".scrolling-element top",
+        endTrigger: ".scrolling-element",
+        end: "bottom 55%",
+        pin: true,
+        pinSpacing: false,
+      });
+    },
+    { scope: container }
+  );
   return (
     <section
-      className="flex flex-col md:flex-row items-start justify-between md:gap-x-10 lg:gap-x-14 xl:gap-x-20 px-5 md:px-0 py-5 lg:py-7 xl:py-10 md:w-[83vw] mx-auto"
+      className=" flex flex-col md:flex-row items-start justify-between md:gap-x-10 lg:gap-x-14 xl:gap-x-20 px-5 md:px-0 py-5 lg:py-7 xl:py-10 md:w-[83vw] mx-auto"
       ref={container}
     >
       <div
@@ -89,7 +91,7 @@ function About() {
         </button>
       </div>
 
-      <div className="md:w-[50vw] space-y-5 lg:space-y-7 xl:space-y-10 pt-10 md:pt-5 lg:pt-7 xl:pt-10">
+      <div className="scrolling-element md:w-[50vw] md:max-w-[259.76px] lg:max-w-[396.65px] xl:max-w-[557.6px] space-y-5 lg:space-y-7 xl:space-y-10 pt-10 md:pt-5 lg:pt-7 xl:pt-10">
         {aboutData.map((data, index) => (
           <div
             key={index}
