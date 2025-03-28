@@ -1,3 +1,10 @@
+import React, { useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger, useGSAP);
+
 function About() {
   const aboutData = [
     {
@@ -36,9 +43,31 @@ function About() {
         "Powering industries with renewable energy to reduce environmental footprints.",
     },
   ];
+
+  const container = useRef(null);
+  const pinElement = useRef(null);
+  // useGSAP(
+  //   () => {
+  //     const pinInstance = ScrollTrigger.create({
+  //       trigger: pinElement.current,
+  //       start: "top top",
+  //       end: "",
+  //       pin: true,
+  //       pinSpacing: false,
+  //       markers: true,
+  //     });
+  //   },
+  //   { scope: container }
+  // );
   return (
-    <section className="flex flex-col md:flex-row items-start justify-between md:gap-x-10 lg:gap-x-14 xl:gap-x-20 px-5 md:px-0 py-5 lg:py-7 xl:py-10 md:w-[83vw] mx-auto">
-      <div className="space-y-5 lg:space-y-6 xl:space-y-8 md:w-[65vw] lg:w-[50vw] md:pt-8 lg:pt-11 xl:pt-15">
+    <section
+      className="flex flex-col md:flex-row items-start justify-between md:gap-x-10 lg:gap-x-14 xl:gap-x-20 px-5 md:px-0 py-5 lg:py-7 xl:py-10 md:w-[83vw] mx-auto"
+      ref={container}
+    >
+      <div
+        className="space-y-5 lg:space-y-6 xl:space-y-8 md:w-[65vw] lg:w-[50vw] md:pt-8 lg:pt-11 xl:pt-15"
+        ref={pinElement}
+      >
         <div>
           <h2 className="text-black text-[26px] md:text-[34px] lg:text-[42px] xl:text-[56px] font-semibold md:-tracking-[1.3px]  lg:-tracking-[2.24px] leading-12 lg:leading-14 xl:leading-17">
             About HDI
@@ -60,7 +89,7 @@ function About() {
         </button>
       </div>
 
-      <div className="space-y-5 lg:space-y-7 xl:space-y-10 pt-10 md:pt-5 lg:pt-7 xl:pt-10">
+      <div className="md:w-[50vw] space-y-5 lg:space-y-7 xl:space-y-10 pt-10 md:pt-5 lg:pt-7 xl:pt-10">
         {aboutData.map((data, index) => (
           <div
             key={index}

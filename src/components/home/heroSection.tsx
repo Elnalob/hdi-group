@@ -1,39 +1,27 @@
-import { useEffect, useRef } from "react";
+import React from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/all";
+import { useGSAP } from "@gsap/react";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, useGSAP);
 function HeroSection() {
-  const imageRef = useRef(null);
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    // Create the parallax effect
-    gsap.fromTo(
-      imageRef.current,
-      {
-        y: 0,
-      },
-      {
-        y: 100,
-        ease: "none",
+  const container = React.useRef(null);
+  useGSAP(
+    () => {
+      gsap.to(".image-inner", {
+        y: -100,
         scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top top",
-          end: "bottom top",
-          scrub: true,
+          trigger: ".image-inner",
+          start: "top 45%",
+          scrub: 1,
         },
-      }
-    );
-
-    // Clean up ScrollTrigger on component unmount
-    return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
-  }, []);
+      });
+    },
+    { scope: container }
+  );
   return (
     <section
-      ref={sectionRef}
+      ref={container}
       className="space-y-6 md:space-y-4 lg:space-y-6 xl:space-y-8 mt-14 md:mt-10 lg:mt-12 xl:mt-[68px] text-center p-5 lg:p-7 xl:p-10 bg-[#f0fff4]"
     >
       <div className="space-y-2.5 md:space-y-1.5 lg:space-y-2.5 xl:space-y-4">
@@ -52,7 +40,7 @@ function HeroSection() {
       </button>
 
       <div className="w-[83vw] h-80 md:h-95 lg:h-110 xl:h-150 mx-auto overflow-hidden rounded-[40px]">
-        <div ref={imageRef}>
+        <div className="h-100 md:h-115 lg:h-130 xl:h-170 image-inner">
           <img
             src="https://res.cloudinary.com/dpupnibml/image/upload/v1743114945/hero-section-img_xmhblz.jpg"
             alt="hero-section image"
