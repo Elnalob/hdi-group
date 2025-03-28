@@ -61,49 +61,48 @@ function About() {
     { scope: container }
   );
   return (
-    <section
-      className=" flex flex-col md:flex-row items-start justify-between md:gap-x-10 lg:gap-x-14 xl:gap-x-20 px-5 md:px-0 py-5 lg:py-7 xl:py-10 md:w-[83vw] mx-auto"
-      ref={container}
-    >
-      <div
-        className="space-y-5 lg:space-y-6 xl:space-y-8 md:w-[65vw] lg:w-[50vw] md:pt-8 lg:pt-11 xl:pt-15"
-        ref={pinElement}
-      >
-        <div>
-          <h2 className="text-black text-[26px] md:text-[34px] lg:text-[42px] xl:text-[56px] font-semibold md:-tracking-[1.3px]  lg:-tracking-[2.24px] leading-12 lg:leading-14 xl:leading-17">
-            About HDI
-          </h2>
-          <p className="text-[#333333] pt-2 md:pt-2.5 xl:pt-4  font-cabin  leading-6.5 md:leading-5.5 lg:leading-6 xl:leading-7.5 text-base lg:text-lg xl:text-xl">
-            HDi is a{" "}
-            <strong className="">
-              leading innovator in Nigeria’s cotton and textile sector,{" "}
-            </strong>
-            dedicated to sustainability, industrial growth, and economic
-            transformation. We are revolutionizing the cotton-to-textile value
-            chain with cutting-edge technology, strategic partnerships, and a
-            commitment to global standards.
-          </p>
-        </div>
-
-        <button className="font-cabin cursor-pointer py-3 md:py-2.5 lg:py-3 text-base md:text-[15px] lg:text-base xl:text-lg  px-6 md:px-5 lg:px-6.5 xl:px-8 rounded-2xl bg-[#105418] text-center">
-          Get In Touch
-        </button>
-      </div>
-
-      <div className="scrolling-element md:w-[50vw] md:max-w-[259.76px] lg:max-w-[396.65px] xl:max-w-[557.6px] space-y-5 lg:space-y-7 xl:space-y-10 pt-10 md:pt-5 lg:pt-7 xl:pt-10">
-        {aboutData.map((data, index) => (
-          <div
-            key={index}
-            className="space-y-3 md:space-y-2 lg:space-y-3 xl:space-y-5 p-6 md:p-5 lg:p-6 xl:p-8 bg-[#f0fff4] border border-black/10 rounded-[40px]"
-          >
-            <h3 className="font-semibold text-black text-[20px] md:text-lg lg:text-[22px] xl:text-[28px] -tracking-[1.6px] leading-6 lg:leading-7.5 xl:leading-9.5">
-              {data.title}
-            </h3>
-            <p className="text-[#333333] text-base md:text-sm xl:text-base leading-5.5 md:leading-4.5 lg:leading-5 xl:leading-6.5">
-              {data.description}
+    <section className=" " ref={container}>
+      <div className="flex flex-col md:flex-row items-start justify-between md:gap-x-10 lg:gap-x-14 xl:gap-x-20 px-5 md:px-0 py-5 lg:py-7 xl:py-10 md:w-[83vw] mx-auto 2xl:w-[83%] 2xl:container 2xl:mx-auto">
+        <div
+          className="space-y-5 lg:space-y-6 xl:space-y-8 md:w-[65vw] lg:w-[50vw] 2xl:w-[50%]  md:pt-8 lg:pt-11 xl:pt-15"
+          ref={pinElement}
+        >
+          <div>
+            <h2 className="text-black text-[26px] md:text-[34px] lg:text-[42px] xl:text-[56px] font-semibold md:-tracking-[1.3px]  lg:-tracking-[2.24px] leading-12 lg:leading-14 xl:leading-17">
+              About HDI
+            </h2>
+            <p className="text-[#333333] pt-2 md:pt-2.5 xl:pt-4  font-cabin  leading-6.5 md:leading-5.5 lg:leading-6 xl:leading-7.5 text-base lg:text-lg xl:text-xl">
+              HDi is a{" "}
+              <strong className="">
+                leading innovator in Nigeria’s cotton and textile sector,{" "}
+              </strong>
+              dedicated to sustainability, industrial growth, and economic
+              transformation. We are revolutionizing the cotton-to-textile value
+              chain with cutting-edge technology, strategic partnerships, and a
+              commitment to global standards.
             </p>
           </div>
-        ))}
+
+          <button className="font-cabin cursor-pointer py-3 md:py-2.5 lg:py-3 text-base md:text-[15px] lg:text-base xl:text-lg  px-6 md:px-5 lg:px-6.5 xl:px-8 rounded-2xl bg-[#105418] text-center">
+            Get In Touch
+          </button>
+        </div>
+
+        <div className="scrolling-element md:w-[50vw] md:max-w-[259.76px] lg:max-w-[396.65px] xl:max-w-[557.6px] 2xl:w-[50%] 2xl:max-w-[700.6px] space-y-5 lg:space-y-7 xl:space-y-10 pt-10 md:pt-5 lg:pt-7 xl:pt-10">
+          {aboutData.map((data, index) => (
+            <div
+              key={index}
+              className="space-y-3 md:space-y-2 lg:space-y-3 xl:space-y-5 p-6 md:p-5 lg:p-6 xl:p-8 bg-[#f0fff4] border border-black/10 rounded-[40px]"
+            >
+              <h3 className="font-semibold text-black text-[20px] md:text-lg lg:text-[22px] xl:text-[28px] -tracking-[1.6px] leading-6 lg:leading-7.5 xl:leading-9.5">
+                {data.title}
+              </h3>
+              <p className="text-[#333333] text-base md:text-sm xl:text-base leading-5.5 md:leading-4.5 lg:leading-5 xl:leading-6.5">
+                {data.description}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
