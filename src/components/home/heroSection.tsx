@@ -1,6 +1,41 @@
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 function HeroSection() {
+  const imageRef = useRef(null);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    // Create the parallax effect
+    gsap.fromTo(
+      imageRef.current,
+      {
+        y: 0,
+      },
+      {
+        y: 100,
+        ease: "none",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+        },
+      }
+    );
+
+    // Clean up ScrollTrigger on component unmount
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
+  }, []);
   return (
-    <section className="space-y-6 md:space-y-4 lg:space-y-6 xl:space-y-8 mt-14 md:mt-10 lg:mt-12 xl:mt-[68px] text-center p-5 lg:p-7 xl:p-10 bg-[#f0fff4]">
+    <section
+      ref={sectionRef}
+      className="space-y-6 md:space-y-4 lg:space-y-6 xl:space-y-8 mt-14 md:mt-10 lg:mt-12 xl:mt-[68px] text-center p-5 lg:p-7 xl:p-10 bg-[#f0fff4]"
+    >
       <div className="space-y-2.5 md:space-y-1.5 lg:space-y-2.5 xl:space-y-4">
         <h1 className="text-black text-[26px] md:text-[34px] lg:text-[42px] xl:text-[56px] font-semibold md:-tracking-[1.5px] lg:-tracking-[2.6px] leading-8 md:leading-11 lg:leading-14 xl:leading-17">
           Driving Sustainable Growth Across Industries
@@ -12,16 +47,18 @@ function HeroSection() {
         </p>
       </div>
 
-      <button className="font-cabin cursor-pointer py-3 md:py-2.5 lg:py-3 text-base md:text-[15px] lg:text-base xl:text-lg  px-6 md:px-5 lg:px-6.5 xl:px-8 rounded-2xl bg-[#105418] text-center">
+      <button className="hover:ring-1 hover:ring-offset-2 hover:ring-[#105418] transition-colors duration-500 hover:bg-[#105418]/90 font-cabin cursor-pointer py-3 md:py-2.5 lg:py-3 text-base md:text-[15px] lg:text-base xl:text-lg  px-6 md:px-5 lg:px-6.5 xl:px-8 rounded-2xl bg-[#105418] text-center">
         Get In Touch
       </button>
 
-      <div className="w-[83vw] h-80 md:h-95 lg:h-110 xl:h-150 mx-auto">
-        <img
-          src="https://res.cloudinary.com/dpupnibml/image/upload/v1743114945/hero-section-img_xmhblz.jpg"
-          alt="hero-section image"
-          className="object-center object-cover rounded-[40px] size-full"
-        />
+      <div className="w-[83vw] h-80 md:h-95 lg:h-110 xl:h-150 mx-auto overflow-hidden rounded-[40px]">
+        <div ref={imageRef}>
+          <img
+            src="https://res.cloudinary.com/dpupnibml/image/upload/v1743114945/hero-section-img_xmhblz.jpg"
+            alt="hero-section image"
+            className="object-center object-cover rounded-[40px] size-full"
+          />
+        </div>
       </div>
     </section>
   );

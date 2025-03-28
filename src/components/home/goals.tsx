@@ -11,7 +11,53 @@ function Goals() {
         </p>
       </div>
 
-      <div></div>
+      <div className="md:w-[83vw] mx-auto">
+        <div className="grid grid-cols-2 gap-10 ">
+          <div className="space-y-10">
+            <div className="rounded-3xl overflow-hidden border-2 border-red-900">
+              <img
+                src="/SDG 2.gif"
+                className="w-full h-[400px] object-cover rounded-3xl overflow-hidden"
+                alt=""
+              />
+            </div>
+
+            <div className="rounded-3xl overflow-hidden border-2 border-red-900">
+              <img
+                src="/sdg 7.jpeg"
+                className="w-full h-[500px] object-cover rounded-3xl overflow-hidden"
+                alt=""
+              />
+            </div>
+
+            <div className="rounded-3xl overflow-hidden border-2 border-red-900">
+            <img
+              src="/SDG 13.png"
+              className="w-full h-[450px] object-cover rounded-3xl overflow-hidden"
+              alt=""
+            />
+          </div>
+          </div>
+
+          <div className="space-y-10">
+            <div className="rounded-3xl overflow-hidden border-2 border-red-900">
+              <img
+                src="/SDG 4.gif"
+                className="w-full h-[500px] object-cover rounded-3xl overflow-hidden"
+                alt=""
+              />
+            </div>
+
+            <div className="rounded-3xl overflow-hidden border-2 border-red-900">
+              <img
+                src="/SDG 8.png"
+                className="w-full h-[580px] object-cover rounded-3xl overflow-hidden"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
