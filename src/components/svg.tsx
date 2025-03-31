@@ -1,19 +1,38 @@
 export const Mail = () => (
+  // <svg
+  //   xmlns="http://www.w3.org/2000/svg"
+  //   className="size-6 lg:size-8 xl:size-10"
+  //   viewBox="0 0 24 24"
+  //   fill="none"
+  //   stroke="currentColor"
+  //   stroke-width="2"
+  //   stroke-linecap="round"
+  //   stroke-linejoin="round"
+  // >
+  //   <rect width="20" height="16" x="2" y="4" rx="2" className="text-blue-600" />
+  //   <path
+  //     d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
+  //     className="text-[#105418]"
+  //   />
+  // </svg>
+
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="size-6 lg:size-8 xl:size-10"
+    width="40"
+    height="40"
     viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
   >
-    <rect width="20" height="16" x="2" y="4" rx="2" className="text-blue-600" />
-    <path
-      d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
-      className="text-[#105418]"
-    />
+    <g
+      fill="none"
+      stroke="#105418"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+      color="#105418"
+    >
+      <path d="m7 8.5l2.942 1.74c1.715 1.014 2.4 1.014 4.116 0L17 8.5" />
+      <path d="M2.016 13.476c.065 3.065.098 4.598 1.229 5.733c1.131 1.136 2.705 1.175 5.854 1.254c1.94.05 3.862.05 5.802 0c3.149-.079 4.723-.118 5.854-1.254c1.131-1.135 1.164-2.668 1.23-5.733c.02-.986.02-1.966 0-2.952c-.066-3.065-.099-4.598-1.23-5.733c-1.131-1.136-2.705-1.175-5.854-1.254a115 115 0 0 0-5.802 0c-3.149.079-4.723.118-5.854 1.254c-1.131 1.135-1.164 2.668-1.23 5.733a69 69 0 0 0 0 2.952" />
+    </g>
   </svg>
 );
 
@@ -32,7 +51,7 @@ export const MapPin = () => (
       d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
       className="text-[#105418]"
     />
-    <circle cx="12" cy="10" r="3" className="text-blue-600" />
+    <circle cx="12" cy="10" r="3" className="text-[#105418]" />
   </svg>
 );
 

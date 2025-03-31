@@ -6,17 +6,17 @@ function HeroSection() {
     {
       icon: <Mail />,
       title: "Email Us At",
-      info: "contact@yoursite.com",
+      info: "contact@hdigrouphq.org",
     },
     {
       icon: <MapPin />,
       title: "Our Location",
-      info: "224, Hill Road Avenue",
+      info: " 22 Coker road Ilupeju Industrial Estate, off Town planning Way , Lagos.",
     },
     {
       icon: <Phone />,
       title: "Call Us At",
-      info: "+1 123456789X",
+      info: "+2348137812748",
     },
   ];
 
@@ -36,14 +36,17 @@ function HeroSection() {
 
         <div className="grid place-content-center">
           <button>
-            <NavLink to="/contact" className="font-cabin cursor-pointer py-3 md:py-2 xl:py-3 text-base md:text-[15px] lg:text-base xl:text-lg  px-6 md:px-5 lg:px-6 xl:px-8 rounded-2xl bg-[#105418] text-center hover:ring-1 hover:ring-offset-2 hover:ring-[#105418] transition-colors duration-500 hover:bg-[#105418]/90 focus:ring-1 focus:ring-offset-2 focus:ring-[#105418] focus:bg-[#105418]/90">
+            <NavLink
+              to="/contact"
+              className="font-cabin cursor-pointer py-3 md:py-2 xl:py-3 text-base md:text-[15px] lg:text-base xl:text-lg  px-6 md:px-5 lg:px-6 xl:px-8 rounded-2xl bg-[#105418] text-center hover:ring-1 hover:ring-offset-2 hover:ring-[#105418] transition-colors duration-500 hover:bg-[#105418]/90 focus:ring-1 focus:ring-offset-2 focus:ring-[#105418] focus:bg-[#105418]/90"
+            >
               Get In Touch
             </NavLink>
           </button>
         </div>
 
         <div className="p-2 lg:p-3 xl:p-5  md:w-[83vw] 2xl:w-[83%] mx-auto">
-          <div className="grid grid-cols-1 items-center sm:grid-cols-2 md:grid-cols-3 gap-3.5 md:gap-2 lg:gap-3 xl:gap-5 ">
+          <div className="grid grid-cols-1 items-stretch sm:grid-cols-2 md:grid-cols-3 gap-3.5 md:gap-2 lg:gap-3 xl:gap-5 ">
             {contactData.map((data, index) => {
               return (
                 <div
