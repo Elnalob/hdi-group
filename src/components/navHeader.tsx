@@ -14,11 +14,11 @@ function Header() {
             </NavLink>
           </div>
 
-          <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
+          <nav className="flex items-center space-x-4 md:space-x-6 lg:space-x-8">
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `font-cabin text-base lg:text-lg transition-colors duration-300 ${
+                `font-cabin text-sm md:text-base lg:text-lg transition-colors duration-300 ${
                   isActive
                     ? "text-[#105418] font-semibold"
                     : "text-black hover:text-[#105418]"
@@ -30,7 +30,7 @@ function Header() {
             <NavLink
               to="/news"
               className={({ isActive }) =>
-                `font-cabin text-base lg:text-lg transition-colors duration-300 ${
+                `font-cabin text-sm md:text-base lg:text-lg transition-colors duration-300 ${
                   isActive
                     ? "text-[#105418] font-semibold"
                     : "text-black hover:text-[#105418]"
