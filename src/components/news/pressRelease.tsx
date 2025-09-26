@@ -1,14 +1,6 @@
 function PressRelease() {
   const supportingImages = [
     {
-      src: "https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1",
-      caption: "Community members gathering for the HDI empowerment program launch"
-    },
-    {
-      src: "https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1",
-      caption: "Agricultural training session with local farmers"
-    },
-    {
       src: "/IMG-20250924-WA0017.jpg",
       caption: "Community leaders and HDI team in formal meeting session"
     },
@@ -27,6 +19,26 @@ function PressRelease() {
     {
       src: "/IMG-20250924-WA0012.jpg",
       caption: "HDI team member with traditional leader during community visit"
+    },
+    {
+      src: "/IMG-20250924-WA0020.jpg",
+      caption: "HDI team members at community event"
+    },
+    {
+      src: "/IMG-20250924-WA0018.jpg",
+      caption: "Community gathering with children and adults"
+    },
+    {
+      src: "/IMG-20250924-WA0019.jpg",
+      caption: "Traditional leaders and HDI team"
+    },
+    {
+      src: "/IMG-20250924-WA0014.jpg",
+      caption: "HDI team discussing with community members"
+    },
+    {
+      src: "/IMG-20250924-WA0015.jpg",
+      caption: "Community leader speaking at event"
     }
   ];
 
