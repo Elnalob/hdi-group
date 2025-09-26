@@ -21,10 +21,6 @@ function PressRelease() {
       caption: "HDI team member with traditional leader during community visit"
     },
     {
-      src: "/IMG-20250924-WA0020.jpg",
-      caption: "HDI team members at community event"
-    },
-    {
       src: "/IMG-20250924-WA0018.jpg",
       caption: "Community gathering with children and adults"
     },
@@ -58,7 +54,7 @@ function PressRelease() {
         {/* Main Header Image */}
         <div className="w-full h-80 md:h-95 lg:h-110 xl:h-150 overflow-hidden rounded-[40px] shadow-lg">
           <img
-            src="https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="/IMG-20250924-WA0010.jpg"
             alt="HDI community empowerment initiative in Imobi"
             className="object-center object-cover size-full"
           />

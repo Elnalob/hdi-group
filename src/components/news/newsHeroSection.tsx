@@ -24,7 +24,7 @@ function NewsHeroSection() {
 
         <div className="w-[83vw] 2xl:w-[83%] h-80 md:h-95 lg:h-110 xl:h-150 mx-auto overflow-hidden rounded-[40px]">
           <img
-            src="https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="/IMG-20250924-WA0009.jpg"
             alt="HDI community empowerment initiative"
             className="object-center object-cover rounded-[40px] size-full"
           />
