@@ -80,13 +80,13 @@ function PressRelease() {
             </p>
           </div>
 
-          {/* CEO Quote - Blockquote */}
+          {/* MD Quote - Blockquote */}
           <blockquote className="bg-[#f0fff4] border-l-4 border-[#105418] p-6 lg:p-8 xl:p-10 rounded-r-2xl my-8 lg:my-10 xl:my-12">
             <p className="text-[#333333] font-cabin text-lg lg:text-xl xl:text-2xl leading-7 lg:leading-8 xl:leading-9 italic mb-4">
               "This initiative represents more than just economic development—it's about empowering communities to become self-sufficient while contributing to Nigeria's industrial growth. By investing in local talent and infrastructure, we're building a sustainable future that benefits everyone."
             </p>
             <cite className="text-[#105418] font-semibold text-base lg:text-lg xl:text-xl">
-              — CEO, HDI Group
+              — MD, HDI Group
             </cite>
           </blockquote>
 
