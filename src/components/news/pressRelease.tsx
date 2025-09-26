@@ -9,20 +9,24 @@ function PressRelease() {
       caption: "Agricultural training session with local farmers"
     },
     {
-      src: "https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1",
-      caption: "Youth participating in skills development workshops"
+      src: "/IMG-20250924-WA0017.jpg",
+      caption: "Community leaders and HDI team in formal meeting session"
     },
     {
-      src: "https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1",
-      caption: "Land acquisition ceremony for the new cotton-textile hub"
+      src: "/IMG-20250924-WA0013.jpg",
+      caption: "HDI team members engaging with community under tent"
     },
     {
-      src: "https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1",
-      caption: "Local leaders and HDI representatives at the signing ceremony"
+      src: "/IMG-20250924-WA0016.jpg",
+      caption: "HDI representative addressing the community at the event"
     },
     {
-      src: "https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1",
-      caption: "Community celebration following the empowerment program announcement"
+      src: "/IMG-20250924-WA0011.jpg",
+      caption: "HDI team and community members group photo at the venue"
+    },
+    {
+      src: "/IMG-20250924-WA0012.jpg",
+      caption: "HDI team member with traditional leader during community visit"
     }
   ];
 
@@ -95,10 +99,10 @@ function PressRelease() {
             Program Highlights
           </h3>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-7 xl:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:gap-7 xl:gap-10">
             {supportingImages.map((image, index) => (
               <div key={index} className="space-y-3 lg:space-y-4">
-                <div className="h-60 lg:h-70 xl:h-80 overflow-hidden rounded-2xl shadow-lg">
+                <div className="h-60 lg:h-70 xl:h-72 overflow-hidden rounded-2xl shadow-lg">
                   <img
                     src={image.src}
                     alt={image.caption}
