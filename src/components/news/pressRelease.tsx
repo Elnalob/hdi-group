@@ -14,7 +14,7 @@ function PressRelease() {
     },
     {
       src: "/IMG-20250924-WA0011.jpg",
-      caption: "HDI MD addressing the community during the program"
+      caption: "HDI CEO addressing the community during the program"
     },
     {
       src: "/IMG-20250924-WA0012.jpg",
@@ -76,7 +76,7 @@ function PressRelease() {
             </p>
           </div>
 
-          {/* MD Quote - Blockquote */}
+          {/* CEO Quote - Blockquote */}
           <blockquote className="bg-[#f0fff4] border-l-4 border-[#105418] p-6 lg:p-8 xl:p-10 rounded-r-2xl my-8 lg:my-10 xl:my-12">
             <p className="text-[#333333] font-cabin text-lg lg:text-xl xl:text-2xl leading-7 lg:leading-8 xl:leading-9 italic mb-4">
               "Farmers are the backbone of national growth. HDI is committed to empowering them as true heroes of sustainable development"
