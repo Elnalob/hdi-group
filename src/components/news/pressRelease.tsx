@@ -1,40 +1,42 @@
+import React from 'react';
+
 function PressRelease() {
   const supportingImages = [
     {
       src: "/IMG-20250924-WA0017.jpg",
-      caption: "Community leaders and HDI team in formal meeting session"
+      caption: "Community leaders and HDI team"
     },
     {
       src: "/IMG-20250924-WA0013.jpg",
-      caption: "HDI team members engaging with community under tent"
+      caption: "HDI team members engaging with community "
     },
     {
       src: "/IMG-20250924-WA0016.jpg",
-      caption: "HDI representative addressing the community at the event"
+      caption: "HDI representative with the commmunity leaders"
     },
     {
       src: "/IMG-20250924-WA0011.jpg",
-      caption: "HDI team and community members group photo at the venue"
+      caption: "HDI MD addressing the community memebers during the program"
     },
     {
       src: "/IMG-20250924-WA0012.jpg",
-      caption: "HDI team member with traditional leader during community visit"
+      caption: "HDI team member with traditional leader during community empowerment"
     },
     {
       src: "/IMG-20250924-WA0018.jpg",
-      caption: "Community gathering with children and adults"
+      caption: "Community gathering with children"
     },
     {
       src: "/IMG-20250924-WA0019.jpg",
-      caption: "Traditional leaders and HDI team"
+      caption: "Imobi traditional leader and HDI team"
     },
     {
       src: "/IMG-20250924-WA0014.jpg",
-      caption: "HDI team discussing with community members"
+      caption: "HDI team discussing with community youth"
     },
     {
       src: "/IMG-20250924-WA0015.jpg",
-      caption: "Community leader speaking at event"
+      caption: " "
     }
   ];
 
@@ -43,8 +45,8 @@ function PressRelease() {
       <div className="md:w-[83vw] 2xl:w-[83%] mx-auto space-y-8 lg:space-y-12 xl:space-y-16">
         {/* Press Release Header */}
         <div className="space-y-3 lg:space-y-4 xl:space-y-6">
-          <h2 className="text-black text-[26px] md:text-[34px] lg:text-[42px] xl:text-[56px] font-semibold md:-tracking-[1.3px] lg:-tracking-[2.24px] leading-8 md:leading-11 lg:leading-14 xl:leading-17">
-            HDI Empowers 200 Residents in Imobi, Acquires Land for Cotton–Textile–Garment Hub
+          <h2 className="text-black text-[26px] md:text-[34px] lg:text-[42px] xl:text-[56px] font-semibold md:-tracking-[1.3px] lg:-tracking-[2.24px] leading-8 md:leading-[44px] lg:leading-[56px] xl:leading-[68px]">
+            HDI Empowers Imobi Community, Secures Land for Cotton–Textile–Garment Hub
           </h2>
           <p className="text-[#666666] font-cabin text-base lg:text-lg xl:text-xl leading-6 lg:leading-7 xl:leading-8">
             Oki-Igbode Village, Imobi, Ijebu East LGA, Ogun State — 20 September 2025
@@ -52,7 +54,7 @@ function PressRelease() {
         </div>
 
         {/* Main Header Image */}
-        <div className="w-full h-80 md:h-95 lg:h-110 xl:h-150 overflow-hidden rounded-[40px] shadow-lg">
+        <div className="w-full h-80 md:h-[380px] lg:h-[440px] xl:h-[600px] overflow-hidden rounded-[40px] shadow-lg">
           <img
             src="/IMG-20250924-WA0010.jpg"
             alt="HDI community empowerment initiative in Imobi"
@@ -63,40 +65,33 @@ function PressRelease() {
         {/* Article Content */}
         <div className="space-y-6 lg:space-y-8 xl:space-y-10">
           <div className="space-y-4 lg:space-y-5 xl:space-y-6">
-            <p className="text-[#333333] font-cabin text-base lg:text-lg xl:text-xl leading-6.5 md:leading-6 lg:leading-7 xl:leading-8">
-              HDI Group has successfully launched a comprehensive empowerment program benefiting 200 residents in Oki-Igbode Village, Imobi, while simultaneously acquiring strategic land for the development of a state-of-the-art cotton-textile-garment manufacturing hub.
+            <p className="text-[#333333] font-cabin text-base lg:text-lg xl:text-xl leading-[26px] md:leading-6 lg:leading-7 xl:leading-8">
+              House of Dorcas Integrated Services (HDI), through its Dorcas All Lives Matter Foundation, has empowered over 200 residents of Oki-Igbode Village in a community programme promoting farming, youth development, and responsible citizenship.
             </p>
 
-            <p className="text-[#333333] font-cabin text-base lg:text-lg xl:text-xl leading-6.5 md:leading-6 lg:leading-7 xl:leading-8">
-              The initiative, which represents a significant milestone in HDI's commitment to sustainable community development, focuses on skills training, agricultural modernization, and youth empowerment. Participants will receive comprehensive training in cotton farming, textile production, and garment manufacturing, creating a complete value chain that benefits the entire community.
+            <p className="text-[#333333] font-cabin text-base lg:text-lg xl:text-xl leading-[26px] md:leading-6 lg:leading-7 xl:leading-8">
+              Themed "Great Farmers, Great Nation", the engagement encouraged farmers to embrace cotton cultivation ahead of HDI's next planting season. Children welcomed the team with songs as the community was sensitised on farming opportunities and government support.
             </p>
 
-            <p className="text-[#333333] font-cabin text-base lg:text-lg xl:text-xl leading-6.5 md:leading-6 lg:leading-7 xl:leading-8">
-              The newly acquired land will serve as the foundation for HDI's integrated cotton-textile-garment hub, designed to process raw cotton from local farmers into finished textile products. This vertical integration approach ensures maximum value retention within the community while creating sustainable employment opportunities.
+            <p className="text-[#333333] font-cabin text-base lg:text-lg xl:text-xl leading-[26px] md:leading-6 lg:leading-7 xl:leading-8">
+              HDI has also acquired 20 hectares for its upcoming Cotton–Textile–Garment (CTG) factories and 4,000 hectares for cotton cultivation — reinforcing Ogun State's industrialisation drive and creating sustainable jobs.
             </p>
           </div>
 
           {/* MD Quote - Blockquote */}
           <blockquote className="bg-[#f0fff4] border-l-4 border-[#105418] p-6 lg:p-8 xl:p-10 rounded-r-2xl my-8 lg:my-10 xl:my-12">
             <p className="text-[#333333] font-cabin text-lg lg:text-xl xl:text-2xl leading-7 lg:leading-8 xl:leading-9 italic mb-4">
-              "This initiative represents more than just economic development—it's about empowering communities to become self-sufficient while contributing to Nigeria's industrial growth. By investing in local talent and infrastructure, we're building a sustainable future that benefits everyone."
+              "Farmers are the backbone of national growth. HDI is committed to empowering them as true heroes of sustainable development"
             </p>
             <cite className="text-[#105418] font-semibold text-base lg:text-lg xl:text-xl">
-              — MD, HDI Group
+              — CEO, HDI Group
             </cite>
           </blockquote>
 
           <div className="space-y-4 lg:space-y-5 xl:space-y-6">
-            <p className="text-[#333333] font-cabin text-base lg:text-lg xl:text-xl leading-6.5 md:leading-6 lg:leading-7 xl:leading-8">
-              The program includes specialized training modules covering modern agricultural techniques, quality control in textile production, sustainable farming practices, and entrepreneurship development. Participants will also receive ongoing mentorship and access to microfinance opportunities to support their individual business ventures.
-            </p>
 
-            <p className="text-[#333333] font-cabin text-base lg:text-lg xl:text-xl leading-6.5 md:leading-6 lg:leading-7 xl:leading-8">
-              Local government officials and community leaders have praised HDI's holistic approach to development, which prioritizes environmental sustainability alongside economic growth. The project is expected to create over 500 direct and indirect jobs within the first two years of operation.
-            </p>
-
-            <p className="text-[#333333] font-cabin text-base lg:text-lg xl:text-xl leading-6.5 md:leading-6 lg:leading-7 xl:leading-8">
-              Construction of the cotton-textile-garment hub is scheduled to begin in early 2026, with the first phase of operations expected to commence by the end of the same year. The facility will incorporate cutting-edge technology and sustainable practices, positioning it as a model for similar developments across Nigeria.
+            <p className="text-[#333333] font-cabin text-base lg:text-lg xl:text-xl leading-[26px] md:leading-6 lg:leading-7 xl:leading-8">
+              The Dorcas All Lives Matter Foundation will continue leading HDI's community initiatives, ensuring farmers and families remain central to its vision.
             </p>
           </div>
         </div>
@@ -110,7 +105,7 @@ function PressRelease() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:gap-7 xl:gap-10">
             {supportingImages.map((image, index) => (
               <div key={index} className="space-y-3 lg:space-y-4">
-                <div className="h-60 lg:h-70 xl:h-72 overflow-hidden rounded-2xl shadow-lg">
+                <div className="h-60 lg:h-[280px] xl:h-[288px] overflow-hidden rounded-2xl shadow-lg">
                   <img
                     src={image.src}
                     alt={image.caption}
