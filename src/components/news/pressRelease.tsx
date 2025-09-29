@@ -14,7 +14,7 @@ function PressRelease() {
     },
     {
       src: "/IMG-20250924-WA0011.jpg",
-      caption: "HDI MD addressing the community memebers during the program"
+      caption: "HDI MD addressing the community during the program"
     },
     {
       src: "/IMG-20250924-WA0012.jpg",
