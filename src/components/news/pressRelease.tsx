@@ -2,7 +2,7 @@ function PressRelease() {
   const supportingImages = [
     {
       src: "/IMG-20250924-WA0017.jpg",
-      caption: "Community leaders and HDI team"
+      caption: "Community youths at the empowerment programme"
     },
     {
       src: "/IMG-20250924-WA0013.jpg",
